@@ -15,6 +15,17 @@
 #define RESTART_VM      1
 #define SNAPSHOT_VM     2
 #define SHUTDOWN_VM     3
-#define DISPATCH_ERR    4
+#define HELP            4
+#define DISPATCH_ERR    5
+
+#define ERR             0
+#define OK              1
+
+typedef struct s_id
+{
+	char *user;
+	char *pub_key;
+
+} t_id;
 
 #endif
