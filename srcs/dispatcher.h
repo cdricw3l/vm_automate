@@ -1,5 +1,5 @@
-#ifndef VM_AUTO_H
-#define VM_AUTO_H
+#ifndef DISPATCHER_H
+#define DISPATCHER_H
 
 #include <stdio.h>
 #include <stdlib.h>
