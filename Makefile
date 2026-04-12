@@ -28,7 +28,7 @@ fclean: clean
 
 re: fclean $(NAME)
 
-git:
+git: clean
 	git add .
 	git commit -m $(COM)
 	git push origin $(shell git branch --show-current)
