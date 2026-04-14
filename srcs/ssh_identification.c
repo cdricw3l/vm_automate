@@ -75,7 +75,8 @@ int get_user(t_id *id)
 		{
 			if (split[2])
 			{
-				id->user = ft_substr(split[2], 0, ft_strlen(split[2]) - 1);
+				id->user = ft_substr(split[2], 0, ft_index_of(split[2], '@'));
+				id->machine = ft_substr(split[2], ft_index_of(split[2], '@') + 1, ft_strlen(&split[2][ft_index_of(split[2], '@')]) - 2);
 				close(fd);
 				clean_split(split);
 				return (OK);

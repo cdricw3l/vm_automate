@@ -81,6 +81,9 @@ t_list	*ft_lstnew(void *content);
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
+//add
+
+int ft_index_of(char *str, char c);
 
 
 #endif

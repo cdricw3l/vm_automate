@@ -16,9 +16,12 @@ static int create_folder(char *folder_name)
     int r;
 
     r = mkdir(folder_name, 0755);
-    if(r != 0)
-        perror("mkir error:");
-    return (r);
+    if(errno != 0 && errno != EEXIST)
+    {
+        perror("mkir error");
+        return (r);
+    }
+    return (0);
 }
 
 int db_initialisation(void)

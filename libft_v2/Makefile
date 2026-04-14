@@ -47,6 +47,7 @@ SRCS_BONUS	:=	$(SRCS) \
 				ft_lstmap.c \
 				ft_lstnew.c \
 				ft_lstsize.c \
+				ft_index_of.c 
 
 OBJETS_SRCS		:=	${SRCS:.c=.o}
 OBJETS_BONUS 	:=	${SRCS_BONUS:.c=.o}

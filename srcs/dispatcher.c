@@ -58,6 +58,7 @@ int	main(void)
 	else
 	{
 		printf("User: %s\n", id.user);
+		printf("Machine: %s\n", id.machine);
 		printf("Key: %s\n", id.pub_key);
 	}
 	arg = getenv("SSH_ORIGINAL_COMMAND");
@@ -84,5 +85,6 @@ int	main(void)
 	
 	free(id.pub_key);
 	free(id.user);
+	free(id.machine);
 	return (0);
 }

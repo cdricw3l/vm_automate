@@ -4,6 +4,7 @@
 
 #include <sqlite3.h>
 #include <stdio.h>
+#include <errno.h>
 #include <sys/stat.h>
 
 #define DB "db/vm.db"

@@ -21,6 +21,7 @@
 typedef struct s_id
 {
 	char *user;
+	char *machine;
 	char *pub_key;
 
 } t_id;
